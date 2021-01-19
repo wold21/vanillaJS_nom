@@ -17,3 +17,11 @@ h2 {
   text-align: center;
   margin: 50px;
 }
+
+.form .greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}

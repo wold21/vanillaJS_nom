@@ -96,19 +96,5 @@ Change BackgroundColor interactive
 //--------------------------------------------------//
 
 // Go to clock.js
-const maintypo = document.querySelector("#title");
-const colors = ["red", "yellow", "green"];
-const cnt = 0;
 
-window.onload = function () {
-  ff();
-};
-
-function ff() {
-  if (cnt == 3) {
-    cnt == 0;
-    maintypo.style.color = colors[cnt];
-  }
-
-  setTimeout("ff()", 500);
-}
+//--------------------------------------------------//
