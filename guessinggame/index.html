@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Number|by Tazo</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <div class="sliderContainer">
+      <p>Generate a number between 0 and <output id="showValue">50</output></p>
+      <input
+        class="slider"
+        id="myRange"
+        type="range"
+        min="1"
+        max="100"
+        value="50"
+        step="1"
+      />
+      <div>
+        <h4>Guess the number:</h4>
+        <input id="number-input" type="text" />
+        <button id="submit">Play!</button>
+        <h4>You chose:</h4>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
