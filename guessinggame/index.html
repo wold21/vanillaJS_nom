@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guessing Number|by Tazo</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <h1>Random Number Game</h1>
-    <div class="sliderContainer">
-      <p>Generate a number between 0 and <output id="showValue">50</output></p>
+    <div>
+      <h3 class="js-title">Generate a number between 0 and <span>10</span></h3>
+      <datalist id="number">
+        <option value="50"></option>
+        <option value="100"></option>
+        <option value="150"></option>
+        <option value="200"></option>
+      </datalist>
       <input
-        class="slider"
-        id="myRange"
+        list="number"
+        id="js-range"
         type="range"
-        min="1"
-        max="100"
-        value="50"
-        step="1"
+        min="5"
+        max="200"
+        value="5"
+        step="5"
       />
-      <div>
-        <h4>Guess the number:</h4>
-        <input id="number-input" type="text" />
-        <button id="submit">Play!</button>
-        <h4>You chose:</h4>
-      </div>
+    </div>
+    <form id="js-guess">
+      <label>Guess the number:</label>
+      <input type="number" max="200" min="5" />
+      <button>Play!</button>
+    </form>
+    <div id="js-result">
+      <span></span>
     </div>
     <script src="game.js"></script>
   </body>
