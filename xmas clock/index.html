@@ -17,10 +17,18 @@
     </form>
     <h4 class="js-greetings greetings"></h4>
     <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
+      <input
+        type="text"
+        id="placeHolder"
+        placeholder="Please enter the task of the day to shine"
+      />
     </form>
-    <ul class="js-toDoList"></ul>
-    <script src="index.js"></script>
+    <ul class="js-pendingList">
+      <h2>📢 PENDING</h2>
+    </ul>
+    <ul class="js-finishedList">
+      <h2>🔔 FINISHED</h2>
+    </ul>
     <script src="gretting.js"></script>
     <script src="clock.js"></script>
     <script src="todo.js"></script>
