@@ -105,7 +105,8 @@ select:focus {
   color: aliceblue;
   font-size: 30px;
   width: 317px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.651);
+  text-shadow: 0px 3px 30px rgba(255, 255, 255, 0.795),
+    3px 3px 4px rgba(0, 0, 0, 0.651);
 }
 
 /* toDo part*/
@@ -124,7 +125,7 @@ select:focus {
   background-color: Transparent;
   color: aliceblue;
   font-size: 25px;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.651);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
 }
 
 ul {
